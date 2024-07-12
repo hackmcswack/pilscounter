@@ -1,0 +1,166 @@
+body {
+    background-color: #1c1c1c;
+    color: #fff;
+    font-family: 'Press Start 2P', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+    overflow: hidden; /* Prevents body from scrolling */
+}
+
+.progress-bar-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.progress-bar-container {
+    width: 70%;
+    background-color: #555;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0 10px;
+    position: relative;
+}
+
+#crown {
+    width: 18px;
+    height: 18px;
+}
+
+.progress-bar {
+    height: 30px;
+    background-color: #fadf6d;
+    width: 0;
+    transition: width 0.3s;
+}
+
+.progress-label {
+    font-size: 16px;
+    color: #fff;
+}
+
+.container {
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+    overflow-y: auto; /* Ensures the container can scroll */
+    height: 90vh; /* Makes the container height responsive */
+    padding: 20px;
+}
+
+.title-image {
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Adjust size as needed */
+    margin: 0 10px;
+}
+
+#title {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+#namesList, #backList {
+    list-style: none;
+    padding: 0;
+}
+
+#namesList li , #backList li{
+    /* background-color: #ff4c4c;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px; */
+    background-color: #ff4c4c;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+}
+
+#adjustPils {
+    margin-top: 20px;
+}
+
+
+
+.adjust-box {
+    background-color: #ff4c4c;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#plusButton, #minusButton {
+    padding: 20px 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff6666;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+
+#pilsCount {
+    font-size: 24px;
+    margin: 0 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    body {
+        padding: 0;
+        height: auto; /* Allows body to adapt to content height */
+    }
+
+    h1 {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    #namesList li {
+        font-size: 30px;
+        padding: 40px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .adjust-box {
+        padding: 10px;
+        justify-content: space-around;
+    }
+
+    #plusButton, #minusButton {
+        padding: 20px 30px;
+        font-size: 20px;
+        margin: 0 5px;
+    }
+
+    #pilsCount {
+        font-size: 20px;
+        margin: 0 10px;
+    }
+}

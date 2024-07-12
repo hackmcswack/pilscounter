@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Names List</title>
+    <link rel="stylesheet" href="namesStyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="icon" href="bilder/pils.png" type="image/png">
+</head>
+<body>
+    
+
+    <div class="container">
+
+        <div class="title-container">
+            <h1 id="totalePils">Totale pils: 0</h1> 
+        </div>
+
+        <div class="progress-bar-wrapper">
+            <span class="progress-label">0</span>
+            <div class="progress-bar-container">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+            <span class="progress-label">100</span>
+        </div>
+
+
+        <img src="bilder/pils.png" alt="Left Image" class="title-image">
+        <h1 id="title">PILSCOUNTER</h1>
+
+        <ul id="namesList"></ul>
+
+        <div id="adjustPils" class="hidden">
+            <div class="adjust-box">
+                <button id="minusButton">-</button>
+                <span id="pilsCount">0</span>
+                <button id="plusButton">+</button>
+            </div>
+        </div>
+
+        <ul id="backList">
+            <li id="backLink">&lt;-</li>
+        </ul>
+        
+    </div>
+
+    <!-- Firebase App (the core Firebase SDK) -->
+    <script type="module" src="names.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pilscounter</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="icon" href="bilder/pils.png" type="image/png">
+</head>
+<body>
+    <div class="container">
+
+        <h3 id="info-text">pilscounter.netlify.app</h3>
+
+        <div class="title-container">
+            <img src="bilder/pils.png" alt="Left Image" class="title-image">
+            <h1>EKSAMENSFEST PILSCOUNTER</h1>
+            <img src="bilder/pils.png" alt="Right Image" class="title-image">
+        </div>
+        
+        <div class="title-container">
+            <h1 id="totalePils">Totale pils: 0</h1> 
+        </div>
+
+        <div class="progress-bar-wrapper">
+            <span class="progress-label">0</span>
+            <div class="progress-bar-container">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+            <span class="progress-label">100</span>
+        </div>
+
+        <form id="addPlayerForm">
+            <input type="text" id="name" placeholder="Name" required>
+            <button type="submit">Add Player</button>
+        </form>
+        
+        <div id="leaderboard-container">
+            <ul id="leaderboard-column1" class="leaderboard"></ul>
+            <ul id="leaderboard-column2" class="leaderboard"></ul>
+        </div>
+    </div>
+
+    <!-- Firebase App (the core Firebase SDK) -->
+    <script type="module" src="app.js"></script>
+</body>
+</html>

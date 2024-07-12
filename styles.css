@@ -1,0 +1,164 @@
+body {
+    background-color: #1c1c1c;
+    color: #fff;
+    font-family: 'Press Start 2P', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden; /* Prevent body overflow */
+    padding-top: 20px; /* Added padding to prevent cutting off */
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 800px; /* Adjust width for two columns */
+    overflow: hidden; /* Prevent container overflow */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.title-image {
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Adjust size as needed */
+    margin: 0 10px;
+}
+
+#scorelink { /* This should be at the very bottom of the page, small text, not easily found */
+    font-size: 12px;
+    color: #ff6666;
+    text-decoration: none;
+    position: absolute; /* Add this line */
+    bottom: 10px; /* Adjust the value as needed */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+}
+
+h1 {
+    margin: 0 10px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="number"] {
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff4c4c;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ff6666;
+}
+
+#leaderboard-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 20px; /* Space between the two columns */
+}
+
+.leaderboard {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.leaderboard li {
+    background-color: #ff4c4c;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+}
+
+.leaderboard li:nth-child(odd) {
+    background-color: #ff6666;
+}
+
+.progress-bar-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.progress-bar-container {
+    width: 70%;
+    background-color: #555;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0 10px;
+    position: relative;
+}
+
+#crown {
+    width: 18px;
+    height: 18px;
+}
+
+.progress-bar {
+    height: 30px;
+    background-color: #fadf6d;
+    width: 0;
+    transition: width 0.3s;
+}
+
+.progress-label {
+    font-size: 16px;
+    color: #fff;
+}
+
+#info-text{
+    /* Shold be an absolute position in the top left */
+    position: absolute;
+    top: 40px;
+    left: 30px;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+
+    animation: pulse 1.5s ease-in-out infinite;
+
+}
+
+/* Keyframes for pulsing the element */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
