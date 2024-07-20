@@ -2,6 +2,11 @@
 
 Welcome to Pilscounter, the ultimate app to enhance your pre-party (vors) experience! This application is designed to keep track of your drinks and provide a real-time scoreboard that can be displayed on a big screen.
 
+# Screenshots
+
+<img src="readmeimg1.jpg" alt="img1" width="200"/>
+<img src="readmeimg2.jpg" alt="img2" width="200"/>
+
 ## Features
 
 - **Mobile-Friendly**: Use Pilscounter on your mobile device for convenience.
